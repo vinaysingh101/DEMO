@@ -74,12 +74,15 @@ ex- ls –l | grep –i test
 ex- wc -l filename.
 
 - tar-  Making an uncompressed tar archive with -cvf option
+
 ex- tar cvf file.tar *.txt  
 
 - zip- Allows you to compress multiple files into a single compressed archive file
+
 ex- zip myfile.zip filename.txt
 
 - unzip- Extract ZIP file
+
 ex- unzip filename.zip
 
 # VI EDITOR
@@ -104,19 +107,84 @@ ex- ssh 192.168.56.101
 ex- scp Desktop/sample_example.txt root@136.183.142.28:/home/remote_dir
 
 - sudo - to give permission to the user
+
 ex- sudo apt update
 
--su -switch the current user to any other user
+- su -switch the current user to any other user
 
 ex- su username.
 
--chmod - used to change the access mode of a file.
+- chmod - used to change the access mode of a file.
 
 ex- chmod <Operations> <File/Directory Name>
 
 - chown - Change the Owner of a File
 
 ex- chown user FILE(s)
+
+## Configuration Management
+
+--------------------------------
+
+- env- env - used to display your current environment or run a specified command in a changed environment
+
+  ex : env
+  
+  - echo $ PATH - used to display the path of the url
+  
+- export - used to mark variables and functions to be passed to child process
+  
+  ex : export
+  
+ - hostname - displays the name of the current host system
+ 
+ ex- hostname 
+ 
+ - netstat - To display connection information.
+ 
+ ex- netstat
+ 
+ - crontab -l - View Root User Cronjob on Linux
+
+- kill- used to send a signal to a process, which can be used to kill the process
+
+- pkill- used to send signals to processes.
+
+- wget- To download a web file from internet
+
+ex- wget url.
+
+- ping - To check connectivity between the nodes.
+
+ex- ping google.com
+
+- uname -a - show kernel config 
+
+- diff - show difference between files
+
+- ps - used to display the current running process
+  ex : ps 
+       PID TTY  TIME CMD
+       
+- ps -e - used to display daemons
+  ex : ps -e
+       PID TTY TIME CMD 
+       
+- history - to display all used commands
+
+ex- history
+
+
+       
+-        
+       
+ 
+
+
+
+
+
+
 
 
 
