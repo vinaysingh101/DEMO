@@ -174,6 +174,120 @@ ex- ping google.com
 
 ex- history
 
+## LOG MANAGEMENT
+
+------------------------
+
+- syslog - Syslog is a vague concept, generally referring to the following 3 things:
+
+
+ Syslog Daemon: It is a daemon that listens for logs and writes them to a specific location. The location(s) is defined in the configuration file for the daemon. rsyslog is the Syslog daemon shipped with most of the distros. 
+    
+ Syslog Message Format: It refers to the syntax of Syslog messages. The syntax is usually defined by a standard (for eg RFC5424).
+ 
+ Syslog Protocol: It refers to the protocol used for remote logging. Modern Syslog daemons can use TCP and TLS in addition to UDP which is the legacy protocol for remote logging.
+ 
+ ex- sudo ls /var/log
+ 
+ alternatives.log ,bootstrap.logs
+ 
+ - journalctl - used to view systemd, kernel and journal logs.
+ 
+ 1. To display all logs
+ 
+   $ journalctl
+   
+ 2. To reverse the order or to display the new entries first.
+ 
+     $journalctl -r
+     
+ 3. To display only a few log entries
+ 
+   $journalctl -n 2
+   
+ 4. To display the boots of the system.
+ 
+  $journalctl --list-boots
+  
+- custom logs - logs that contain diagnostic information from custom applications, other cloud providers, or an on-premise environment.
+
+ Default Log File Location
+ 
+   ls -l /var/log.
+   
+   
+ ## Network Management
+ 
+ ------------------------
+ 
+ * ifcongif - used to dispaly the system network interface information
+    
+* hostname - used to display machine hostname
+
+* netstat -l - used to display all listening ports
+
+* netstat -t -used to dispaly all TCP connections
+
+* http & https - HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses, HTTP Works at the Application Layer and HTTPS works at Transport Layer.
+
+* internal network - A network where the establishment, maintenance, and provisioning of security controls are under the direct control of organizational 
+
+ex - employees or contractors.
+
+
+* external network - A network not controlled by the organization.
+
+ex- firewalls, load balancers, web servers, ftp servers, 
+
+- TCP - it is a communications standard that enables application programs and computing devices to exchange messages over a network. 
+
+ex- 
+
+    Web
+    
+    SSH, FTP, telnet
+    
+    SMTP, sending mail
+    
+    IMAP/POP, receiving mail
+    
+- UDP - it s a communications protocol that is primarily used to establish low-latency and loss-tolerating connections between applications on the internet
+
+ex-
+    Voice over IP (VoIP), online games, and media streaming
+    
+- private subnet - private subnet are back-end servers that don't need to accept incoming traffic from the internet and therefore do not have public IP addresses; 
+
+
+- public subnet - A public subnet is a subnet that's associated with a route table that has a route to an internet gateway.
+
+- CDIR (Classless Inter-Domain Routing or supernetting) - it s a group of IP addresses that are allocated to the customer when they demand a fixed number of IP addresses.
+
+
+    To calculate the CIDR prefix for a given IP address range, you need to count the number of leading 1 bits in the binary representation of the subnet mask. For example, the subnet mask of    255.255. 255.0 (in dotted decimal notation) has 24 leading 1 bits, so its CIDR prefix is /24 .23-Feb-2023.
+    
+    
+ - port range - Port numbers 0 - 1023 are used for well-known ports
+ 
+                Port numbers 1024 - 65535 are available for the following user applications
+                
+                Port numbers 1024 - 49151 are reserved for user server applications.
+                
+                Port numbers 49152 - 65535 are reserved for clients
+                
+    
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+
 
        
 -        
