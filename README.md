@@ -7,10 +7,13 @@
 ---------------
 
 - LS - List of file and directories.
+
 ex- ls
+
      Desktop , download , pictures , file
      
  - ls -l - Listing files and directories in long list format.
+ 
  ex- ls -l <directory name>
       
  - touch - Create the file
